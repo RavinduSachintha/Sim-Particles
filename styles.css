@@ -1,0 +1,98 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#pc {
+  margin: 0px 10px;
+  background-color: #9b59b6;
+  border: 2px solid #9055a7;
+  border-radius: 10px;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+.header-title {
+  margin: 10px 0px;
+  padding: 0;
+  padding-left: 30px;
+  font-family: "Pacifico", cursive;
+  font-size: 48px;
+  background-color: #e67e22;
+  color: #333333;
+  text-shadow: 2px 2px 2px #f4f4f4;
+  box-shadow: 0px 0px 5px #333333;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+}
+
+.container {
+  margin: 0;
+  padding: 0;
+  margin-right: 10px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-container > * {
+  margin: 5px 0px;
+  padding: 0;
+  font-size: 32px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0px 2px 2px #333333;
+  width: 100%;
+  line-height: 64px;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 2px 2px 4px #333333;
+}
+
+.form-container {
+  margin: 5px 0px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  color: #333333;
+  max-width: 100%;
+  border: 1px solid #333333;
+  border-radius: 10px;
+}
+
+.form-container > label {
+  margin: 5px 10px;
+  flex: auto;
+}
+
+.form-container > label > * {
+  line-height: 16px;
+}
+
+.form-container > label > input {
+  margin: 0px 5px;
+  font-size: 14px;
+}
+
+.emg-refresh {
+  background-color: orangered;
+}
+
+.emg-refresh:hover {
+  box-shadow: 2px 4px 4px #333333;
+  cursor: pointer;
+}
+
+.start {
+  background-color: green;
+}
+
+.start:hover {
+  box-shadow: 2px 4px 4px #333333;
+  cursor: pointer;
+}

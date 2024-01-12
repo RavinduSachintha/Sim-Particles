@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Particle Canvas</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1 class="header-title">SIM-PARTICLES</h1></header>
+
+    <main>
+      <section>
+        <canvas id="pc" width="600" height="600"></canvas>
+      </section>
+      <section class="container">
+        <form class="form-container">
+          <label for="singleEntryPoint">
+            Single Entry Point
+            <input
+              type="checkbox"
+              name="singleEntryPoint"
+              id="single-entry-point"
+              checked="true"
+              disabled="true"
+            />
+          </label>
+          <label for="randomVelocity">
+            Random Velocity
+            <input
+              type="checkbox"
+              name="randomVelocity"
+              id="random-velocity"
+              checked="true"
+              disabled="true"
+            />
+          </label>
+          <label for="particleCount">
+            Particle Count
+            <input
+              type="number"
+              name="particleCount"
+              id="particle-count"
+              value="100"
+              min="1"
+              max="5000"
+            />
+          </label>
+          <label for="particleSize">
+            Particle Size
+            <input
+              type="number"
+              name="particleSize"
+              id="particle-size"
+              value="2"
+              min="1"
+              max="10"
+            />
+          </label>
+        </form>
+        <div class="btn-container">
+          <button type="button" class="start" id="start">
+            Start Simulation
+          </button>
+        </div>
+        <div class="btn-container">
+          <button type="button" class="emg-refresh" id="emg-refresh">
+            Emergency Refresh
+          </button>
+        </div>
+      </section>
+    </main>
+    <script src="dist/bundle.js"></script>
+  </body>
+</html>

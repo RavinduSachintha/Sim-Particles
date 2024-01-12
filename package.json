@@ -1,0 +1,15 @@
+{
+  "name": "particle-canvas",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "author": "Ravindu Sachintha",
+  "license": "MIT",
+  "scripts": {
+    "build": "esbuild --bundle src/main.ts --outfile=dist/bundle.js --target=safari15 --minify",
+    "watch": "esbuild --bundle src/main.ts --outfile=dist/bundle.js --target=safari15 --minify --watch"
+  },
+  "devDependencies": {
+    "esbuild": "^0.19.11",
+    "typescript": "^5.3.3"
+  }
+}

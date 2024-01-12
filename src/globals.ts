@@ -1,0 +1,4 @@
+const PARTICLE_SIZE = 2;
+const PARTICLE_COLOR = '#FFF';
+
+export default {PARTICLE_COLOR, PARTICLE_SIZE};
