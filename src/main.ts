@@ -11,6 +11,18 @@ const pSize = document.getElementById("particle-size") as HTMLInputElement;
 
 const ps: ParticleSystem = new ParticleSystem();
 
+const setCanvasSize = () => {
+  if (window.innerWidth >= 768) {
+    // Laptop or larger screens
+    canvas.width = 600;
+    canvas.height = 600;
+  } else {
+    // Mobile screens
+    canvas.width = 300;
+    canvas.height = 300;
+  }
+};
+
 const start = () => {
   ps.state = "started";
   globals.PARTICLE_SIZE = parseInt(pSize.value);
@@ -41,6 +53,8 @@ const stop = () => {
  * main function that executes the logic
  */
 const main = () => {
+  setCanvasSize();
+
   if (context != null) {
     ps.setCanvas(canvas);
     ps.setContext(context);
